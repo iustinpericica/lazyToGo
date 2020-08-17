@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lazy To Go</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="libs/jquery-3.5.1.min.js" crossorigin="anonymous"></script>  
+    <script src="libs/qrious.min.js"></script>
+  </head>
+  <body>
+    <h1>🥱 Lazy to Go 😴 </h1>
+    <p>Use your phone as a mouse and keyboard</p>
+    <p>Enter the next url in the tab of a browser or scan the QR code</p>
+    <h2 id="url_req"></h2>
+    <p id="info_qr"></p>
+    <canvas id="qr-code"></canvas>
+
+    <!-- modal  -->
+  
+    <!-- The Modal -->
+    <div id="myModalIphone" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="iphone">
+          If you have an iPhone: 
+          <br><br>
+          Open the Camera app from the Home screen, Control Center, or Lock screen.
+          <br><br>
+          Select the rear facing camera. Hold your device so that the QR code appears in the viewfinder in the Camera app. Your device recognizes the QR code and shows a notification.
+          <br><br>
+          Tap the notification to open the link associated with the QR code.
+
+          <img src="media/iphone-qr.jpg" width="200"/>
+
+          <br>
+          <a href="https://support.apple.com/en-ie/HT208843" target="_blank" rel="noopener noreferrer">More info at Apple</a>
+          <br><br><br><br>
+
+        </p>
+      </div>
+
+    </div>
+
+    <div id="myModalSamsung" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="iphone">
+          If you have a Samsung: 
+          <br><br>
+          1. Swipe down your screen to access your Quick Settings and tap on QR Scanner
+          <br>
+          <img src="media/qr-samsung-q.webp" width="200" />
+          <br><br>
+          2. Tap OK to proceed to the next step
+          <br>
+          <img src="media/qr-samsung-2.webp" width="200" />
+          <br><br>
+          3. The Camera app will then be launched where you can scan QR Code.
+          Once the QR Code is scanned, you should be able to launch the webpage below.
+          <br>
+         <img src="media/samsung-qr-3.webp" width="200"/>
+         <br><br>
+          4. If the QR Code cannot be scanned you may need to enable this setting.
+          Tap on the Camera Settings icon button.
+          <br>
+          <img src="media/samsung-qr-4.webp" width="200"/>
+          <br><br>
+          5. Toggle on Scan QR codes
+          <br>
+          <img src="media/samsung-qr-5.webp" width="200"/>
+          <br>
+          <a href="https://www.samsung.com/au/support/mobile-devices/samsung-qr-code-scanner/" target="_blank" rel="noopener noreferrer">More info at samsung. Press here</a>
+          <br><br><br><br>
+
+        </p>
+      </div>
+
+    </div>
+    <div id="myModalHuawei" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          If you have a Huawei: 
+          <br><br>
+          1. This feature requires an Internet connection. Connect to a Wi-Fi network to avoid incurring unnecessary data charges.
+          <br><br>
+          2. Once your Phone is unlocked, swipe down on the home screen to open the HiSearch box, and touch <img src="media/hi-search-box.png" width="30"/>
+          You can also swipe up from the bottom of the lock screen, and touch <img src="media/hi-search-box.png" width="30"/> to open HiVision. 
+          On the HiVision screen, touch <img src="media/qr-huawei.png" width="30"/> and place the QR code or barcode within the scan frame to acquire information.
+          
+          <br><br>
+          
+          <a href="https://consumer.huawei.com/en/support/content/en-us00707210/" target="_blank" rel="noopener noreferrer">More info at Huawei. Press here</a>
+          <br><br><br><br>
+
+        </p>
+      </div>
+
+    </div>
+
+   
+
+  </body>
+</html>
+
+<script src="desktop.js"></script>

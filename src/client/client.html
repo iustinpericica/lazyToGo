@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- build:css style/app.min.css -->
+    <link rel="stylesheet" href="/client.css">
+    <link rel="stylesheet" href="/key.css">
+    <!-- endbuild -->
+    <!-- <link rel="localization" href="locales/manifest.json"> -->
+
+    <!-- build:js js/app.min.js -->
+    <!-- <script defer src="vendor/l20n/l20n.min.js"></script> -->
+    <!-- endbuild -->
+    <title>Webby Mouse</title>
+  </head>
+  <body>
+    <!--
+    <header class="navbar navbar-inverse navbar-fixed-top shadow-z-2" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#pushMenu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" data-l10n-id="projectName">Webby Mouse</a>
+      </div>
+      <div class="collapse navbar-collapse" id="pushMenu">
+        <ul class="nav navbar-nav">
+          <li id="touch-ctrl" class="active">
+            <a href="#"><i class="mdi-hardware-mouse"></i> Touch Control</a>
+          </li>
+          <li id="motion-ctrl">
+            <a href="#"><i class="mdi-maps-my-location"></i> Motion Control</a>
+          </li>
+          <li id="present-ctrl">
+            <a href="#"><i class="mdi-image-collections"></i> Presentation Control</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <div class="togglebutton">
+            <label class="navbar-item">
+            <input type="checkbox" name="checkbox" id="fullscreen-toggle" autocomplete="off"></input>
+            Fullscreen <span class="toggle pull-right"></span>
+            </label>
+            </div>
+          </li>
+          <li class="hidden" id="portrait">
+            <a href="#">
+            <i class="mdi-communication-stay-current-portrait"></i> Portrait
+            </a>
+          </li>
+          <li class="hidden" id="landscape">
+            <a href="#">
+              <i class="mdi-communication-stay-current-landscape"></i> Landscape
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li><a href="#" id="passcode"><i class="mdi-notification-vpn-lock"></i> Pass Code</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="about">About</a></li>
+        </ul>
+      </div>
+    </header>
+  -->
+    <p id="trackpadInfo">The bordered area is the trackpad, try it!</p>
+    <p>If you closed your phone and it does not work press the button or refresh yourself <button onclick="location.reload();">Refresh</button></p>
+    
+    <div class="touchpad" id="touchpad"></div>
+
+    <div class="simple-keyboard"></div>
+    
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    
+    <!-- mouse client -->
+
+    <script src="key.js"></script>
+
+    <script defer src="/client.js"></script>
+  </body>
+</html>

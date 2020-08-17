@@ -1,0 +1,26 @@
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+
+body {
+    padding-top: 50px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+}
+
+.touchpad {
+    display: block;
+    width: 90%;
+    height: 200px;
+    border-style: solid;
+    justify-content: center;
+    margin-left: 4%;
+}
