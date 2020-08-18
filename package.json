@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "LazyToGo",
   "productName": "my-app",
   "version": "1.0.0",
   "description": "My Electron application description",
@@ -19,12 +19,16 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "./src/icons/win/icon.ico"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "my_app"
+            "name": "lazy_to_go",
+            "loadingGif": "./src/animation/lazytogo_animation.gif",
+            "setupIcon": "./src/icons/win/icon.ico"
           }
         },
         {
