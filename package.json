@@ -13,14 +13,14 @@
   },
   "keywords": [],
   "author": {
-    "name": "=iustin",
+    "name": "iustin pericica",
     "email": "iustinpericica@yahoo.com"
   },
   "license": "MIT",
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon": "./src/icons/mac/icon.icns"
+        "icon": "./src/icons/win/icon.ico"
       },
       "makers": [
         {
@@ -51,7 +51,7 @@
             "format": "ULFO",
             "background": "./icon_tolazy.png",
             "name": "LazyToGo",
-            "icon":"./src/icons/mac/icon.icns"
+            "icon": "./src/icons/mac/icon.icns"
           }
         }
       ]

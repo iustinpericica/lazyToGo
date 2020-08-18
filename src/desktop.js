@@ -16,7 +16,7 @@ $(document).ready(function() {
   })();
 
         let url_req = document.getElementById('url_req');
-        url_req.innerHTML = 'Go to on your mobile phone: ' + xhttp.responseText;
+        url_req.innerHTML = 'Go on your mobile phone to: ' + xhttp.responseText;
         document.getElementById('info_qr').innerHTML = `Or scan the below QR code. How to scan? 
         <button id='btnIphone'>I have an Iphone</button>
         <button id='btnSamsung'>I have a Samsung</button>

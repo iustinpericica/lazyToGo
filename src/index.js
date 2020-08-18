@@ -1,5 +1,8 @@
 const { app, BrowserWindow } = require('electron');
+const { systemPreferences } = require('electron')
+
 const path = require('path');
+
 
 if (require('electron-squirrel-startup')) return app.quit();
 
@@ -100,6 +103,20 @@ app1.get('/key.css',(req, res)=>{
 app1.get('/key.js',(req, res)=>{
   res.sendFile(__dirname + '/client/key.js');
 })
+
+app1.get('/favicon.png',(req, res)=>{
+  res.sendFile(__dirname + '/icons/png/512x512.png');
+})
+
+app1.get('/jquery.min.js',(req, res)=>{
+  res.sendFile(__dirname + '/cdn/jquery.min.js');
+})
+
+app1.get('/hammer.min.js',(req, res)=>{
+  res.sendFile(__dirname + '/cdn/hammer.min.js');
+})
+
+
 
 var os = require('os');
 
