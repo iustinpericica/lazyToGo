@@ -1,6 +1,6 @@
 {
   "name": "lazy-to-go",
-  "productName": "lazy-to-go",
+  "productName": "Lazy To Go",
   "version": "1.0.0",
   "description": "Control your pc/ laptop from your phone with track pad and keyboard",
   "main": "src/index.js",
@@ -20,7 +20,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon": "./src/icons/win/icon.ico"
+        "icon": "./src/icons/mac/icon.icns"
       },
       "makers": [
         {
@@ -50,7 +50,8 @@
           "config": {
             "format": "ULFO",
             "background": "./icon_tolazy.png",
-            "name": "LazyToGo"
+            "name": "LazyToGo",
+            "icon":"./src/icons/mac/icon.icns"
           }
         }
       ]
